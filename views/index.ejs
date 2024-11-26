@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<h1>🍹 Random Cocktail Recipe 🍸</h1>
+<div class="cocktail">
+    <h2><%= name %></h2>
+    <img src="<%= image %>" alt="<%= name %>">
+    <h3>Ingredients</h3>
+    <ul>
+      <% ingredients.forEach(ingredient => { %>
+        <li><%= ingredient %></li>
+      <% }); %>
+    </ul>
+    <h3>Instructions</h3>
+    <p><%= instructions %></p>
+  </div>
+
+  <form action="/" method="get">
+    <button type="submit">Get Another Cocktail</button>
+  </form>
+<body>
+    
+</body>
+</html>
